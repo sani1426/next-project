@@ -1,7 +1,7 @@
 "use cache"
 const Page = async () => {
         let allProduct = []
-        let res = await fetch("https://fakestoreapi.com/products/")
+        let res = await fetch("https://jsonplaceholder.typicode.com/todos//")
         if(!res.ok){
                 return(
                         <div>خطا در بارگیری</div>
