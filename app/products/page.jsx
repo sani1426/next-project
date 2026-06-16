@@ -1,4 +1,4 @@
-
+"use cache"
 const Page = async () => {
         let allProduct = []
         let res = await fetch("https://fakestoreapi.com/products/")
