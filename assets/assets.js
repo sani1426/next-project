@@ -94,6 +94,12 @@ export const assets = {
     stripe_logo,
     cross_icon
 }
+export const navItems = [
+    {id: 1 , title: "صفحه اصلی" , href: "/"},
+    {id: 1 , title: "کالکشن" , href: "/collection"},
+    {id: 1 , title: "درباره ما" , href: "/about"},
+    {id: 1 , title: "تماس با ما" , href: "/contact"},
+]
 
 export const products = [
     {

@@ -1,10 +1,11 @@
 import localFont from 'next/font/local'
 import '../globals.css'
+
 import Navbar from '../../components/shared/Navbar'
 import Footer from '../../components/shared/Footer'
 
 const myFont = localFont({
-  src: '../../public/font/iransans.ttf',
+  src: '../../public/font/irsans.ttf',
 })
 
 export const metadata = {
