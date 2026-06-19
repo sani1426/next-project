@@ -5,7 +5,7 @@ import Navbar from '../../components/shared/Navbar'
 import Footer from '../../components/shared/Footer'
 
 const myFont = localFont({
-  src: '../../public/font/irsans.ttf',
+  src: '../../public/font/Far_Casablanca.ttf',
 })
 
 export const metadata = {
