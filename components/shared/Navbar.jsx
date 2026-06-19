@@ -15,9 +15,9 @@ const Navbar = () => {
         ))}
       </ul>
       <div className='flex items-center gap-6'>
-     <FiSearch className='w-5 cursor-pointer' />
-        <div className='group relative:'>
-    <BsPersonCircle className='text-2xl cursor-pointer' />
+     <FiSearch className='text-3xl cursor-pointer' />
+        <div className='group relative'>
+    <BsPersonCircle className='text-3xl cursor-pointer' />
           <div className='group-hover:block hidden absolute dropdown-menu right-0 pt-4'>
             <div className='flex flex-col gap-2 w-36 py-3 px-5 bg-slate-100 text-gray-500 rounded'>
               <p className='cursor-pointer hover:text-black'>پروفایل</p>
