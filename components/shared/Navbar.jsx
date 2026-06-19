@@ -6,7 +6,7 @@ import { BsPersonCircle } from "react-icons/bs";
 
 const Navbar = () => {
   return (
-    <div className='flex items-center justify-between py-5 font-medium'>
+    <div className='flex items-center justify-between py-5 font-medium px-10'>
       {/* <img src={assets.logo} alt="logo-image" className="w-36" /> */}
       <h1 className='text-3xl font-bold'>سامان شاپ</h1>
       <ul className='hidden sm:flex gap-5 text-sm text-gray-700'>
