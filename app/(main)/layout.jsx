@@ -3,6 +3,7 @@ import '../globals.css'
 
 import Navbar from '../../components/shared/Navbar'
 import Footer from '../../components/shared/Footer'
+import { ShopContextProvider } from '../../context/SgopContext'
 
 const myFont = localFont({
   src: '../../public/font/irsans.ttf',
@@ -15,11 +16,13 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html dir='rtl' lang='fa' >
-      <body className={myFont.className} >
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
+    <html dir='rtl' lang='fa'>
+      <body className={myFont.className}>
+        <ShopContextProvider>
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
+        </ShopContextProvider>
       </body>
     </html>
   )
