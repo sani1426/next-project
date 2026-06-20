@@ -20,7 +20,7 @@ const Navbar = () => {
         <div className='gr relative'>
           <BsPersonCircle className='text-2xl cursor-pointer' />
           <div className='gr-h opacity-0 pointer-events-none absolute transition-all duration-400 dropdown-menu left-0 pt-4'>
-            <div className='flex flex-col gap-2   bg-slate-100 text-gray-500 rounded-md px-2'>
+            <div className='flex flex-col gap-2   bg-slate-100 text-gray-500 rounded-md p-2'>
               <Link href="/" className='cursor-pointer text-hovering px-8 py-1'>پروفایل</Link>
               <Link href="/orders" className='cursor-pointer text-hovering px-8 py-1'>سفارشات</Link>
               <Link href="/" className='cursor-pointer text-hovering px-8 py-1'>خروج</Link>
@@ -29,7 +29,7 @@ const Navbar = () => {
         </div>
         <Link href="/cart" className='relative'>
           <FaCartShopping className='text-2xl cursor-pointer' />
-          <p className='absolute riht-[-5px] -bottom-1.25 w-4 text-center leading-4 bg-white text-black aspect-square rounded-full text-[8px]'>10</p>
+          <p className='absolute riht-[-5px] -bottom-1.25 w-4 text-center leading-4 bg-white border border-black text-black aspect-square rounded-full text-[8px]'>10</p>
         </Link>
       </div>
     </div>
