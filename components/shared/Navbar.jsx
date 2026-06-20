@@ -4,6 +4,7 @@ import NavLink from '../UI/NavLink'
 import { FiSearch } from 'react-icons/fi'
 import { GoPerson } from "react-icons/go";
 import { BsHandbag } from "react-icons/bs";
+import { FaAlignLeft } from "react-icons/fa";
 
 const Navbar = () => {
   return (
@@ -31,6 +32,7 @@ const Navbar = () => {
           <BsHandbag className='text-2xl cursor-pointer' />
           <p className='absolute riht-[-5px] -bottom-1.25 w-4 text-center leading-4 bg-black text-white aspect-square rounded-full text-[8px]'>10</p>
         </Link>
+        <FaAlignLeft className='text-2xl cursor-pointer sm:hidden' />
       </div>
     </div>
   )
