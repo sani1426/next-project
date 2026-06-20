@@ -7,7 +7,7 @@ const NavLink = ({path , title}) => {
         return ( 
                 <Link href={path} className='flex flex-col items-center gap-1'>
                 <p className=" text-lg hover:text-blue-500 transition-all duration-300">{title}</p>
-                <hr className={`border-none transition-all duration-300 h-[1.5px] bg-gray-700 ${pathName == path ? "w-3/4" : "w-2/4  "}`} />
+                <hr className={`border-none transition-all duration-300 h-[1.5px] bg-gray-700 ${pathName == path ? "w-3/4" : "w-0  "}`} />
               </Link>
          );
 }
