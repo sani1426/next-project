@@ -18,8 +18,8 @@ const Navbar = () => {
      <FiSearch className='text-2xl cursor-pointer' />
         <div className='gr relative'>
     <BsPersonCircle className='text-2xl cursor-pointer' />
-          <div className='gr-h hidden absolute dropdown-menu -left-2 pt-4'>
-            <div className='flex flex-col gap-2 w-36 py-3 px-5 bg-slate-100 text-gray-500 rounded'>
+          <div className='gr-h opacity-0 pointer-events-none absolute transition-all duration-400 dropdown-menu -left-2 pt-4'>
+            <div className='flex flex-col gap-2 w-36 py-3 px-5 bg-slate-100 text-gray-500 rounded-md'>
               <p className='cursor-pointer hover:text-black'>پروفایل</p>
               <p className='cursor-pointer hover:text-black'>سفارشات</p>
               <p className='cursor-pointer hover:text-black'>خروج</p>

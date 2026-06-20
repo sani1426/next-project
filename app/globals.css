@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
 .gr:hover .gr-h{
-  display: block
+  opacity: 1;
+  pointer-events: auto;
 }
