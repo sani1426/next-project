@@ -17,7 +17,7 @@ const MobileMenu = () => {
                         <div className="flex flex-col text-gray-600">
                                 <div onClick={()=> setVisible(false)} className="flex items-center gap-1 p-3 cursor-pointer">
                                         <IoIosArrowForward  className='text-2xl '/>
-                                        <p>back</p>
+                                        <p>بازگشت</p>
                                 </div>
                                 {
                                         navItems.map((item) => (
