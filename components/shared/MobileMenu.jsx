@@ -8,7 +8,7 @@ const MobileMenu = () => {
         return ( 
                 <>
                  <FaAlignLeft onClick={()=> setVisible(!visible)} className='text-2xl cursor-pointer sm:hidden' />
-                 <div className={`absolute top-0 left-0 bottom-0 overflow-hidden bg-white transition-all ${visible ? "w-full" : "w-0"}`}>
+                 <div className={`absolute top-0 left-0 bottom-0 overflow-hidden bg-white transition-all ${visible ? "w-[40%]" : "w-0"}`}>
 
                  </div>
                 </>
