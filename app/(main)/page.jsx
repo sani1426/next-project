@@ -1,12 +1,11 @@
 
-import Link from "next/link";
+
+import Hero from "../../components/main/Hero";
 
 export default function Home() {
   return (
 <div>
-  <Link href="/products">
-  products
-  </Link>
+    <Hero />
 </div>
   );
 }
