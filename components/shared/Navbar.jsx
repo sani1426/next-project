@@ -29,7 +29,7 @@ const Navbar = () => {
         </div>
         <Link href="/cart" className='relative'>
           <FaCartShopping className='text-2xl cursor-pointer' />
-          <p className='absolute riht-[-5px] -bottom-1.25 w-4 text-center leading-4 bg-black text-white aspect-square rounded-full text-[8px]'>10</p>
+          <p className='absolute riht-[-5px] -bottom-1.25 w-4 text-center leading-4 bg-white text-black aspect-square rounded-full text-[8px]'>10</p>
         </Link>
       </div>
     </div>
