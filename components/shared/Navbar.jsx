@@ -7,7 +7,7 @@ import { FaCartShopping } from "react-icons/fa6";
 
 const Navbar = () => {
   return (
-    <div className='flex items-center justify-between py-5 font-medium px-10'>
+    <div className='flex items-center justify-between py-5 font-medium px-5 md:px-10'>
       {/* <img src={assets.logo} alt="logo-image" className="w-36" /> */}
       <h1 className='sm:text-3xl md:text-4xl font-bold'>سامان شاپ</h1>
       <ul className='hidden sm:flex gap-5 sm:text-sm md:text-lg text-gray-700'>
