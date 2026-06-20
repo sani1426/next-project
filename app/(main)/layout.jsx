@@ -6,7 +6,7 @@ import Footer from '../../components/shared/Footer'
 import { ShopContextProvider } from '../../context/ShopContext'
 
 const myFont = localFont({
-  src: '../../public/font/irsans.ttf',
+  src: '../../public/font/Tanha.ttf',
 })
 
 export const metadata = {
