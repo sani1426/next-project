@@ -3,7 +3,7 @@ import '../globals.css'
 
 import Navbar from '../../components/shared/Navbar'
 import Footer from '../../components/shared/Footer'
-import { ShopContextProvider } from '../../context/SgopContext'
+import { ShopContextProvider } from '../../context/ShopContext'
 
 const myFont = localFont({
   src: '../../public/font/irsans.ttf',
