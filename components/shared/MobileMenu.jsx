@@ -3,9 +3,13 @@
 import { useState } from 'react';
 import { FaAlignLeft } from 'react-icons/fa'
 import { IoIosArrowForward } from "react-icons/io";
+import { navItems } from '../../assets/assets';
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 const MobileMenu = () => {
         const [visible , setVisible] = useState(false)
+        const pathName = usePathname()
         return ( 
                 <>
                  <FaAlignLeft onClick={()=> setVisible(!visible)} className='text-2xl cursor-pointer sm:hidden' />
@@ -15,6 +19,13 @@ const MobileMenu = () => {
                                         <IoIosArrowForward  className='text-2xl '/>
                                         <p>back</p>
                                 </div>
+                                {
+                                        navItems.map((item) => (
+                                                <Link key={item.id} href={item.href} className={`py-2 pl-6 border`} >
+                                                        {item.title}
+                                                </Link>
+                                        ))
+                                }
                         </div>
                  </div>
                 </>
