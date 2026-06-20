@@ -1,3 +1,5 @@
+import Image from "next/image";
+import { assets } from "../../assets/assets";
 
 const Hero = () => {
         return ( 
@@ -16,7 +18,7 @@ const Hero = () => {
                                 </div>
                         </section>
                         <section className="">
-
+                                <Image className="w-full sm:w-1/2" src={assets.hero_img} alt="hero-image"  />
                         </section>
                 </div>
          );
