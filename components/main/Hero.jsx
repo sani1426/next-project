@@ -17,9 +17,9 @@ const Hero = () => {
                                         </div>
                                 </div>
                         </section>
-                        <section className="">
-                                <img className="w-full sm:w-1/2" src={assets.hero_img} alt="hero-image"  />
-                        </section>
+           
+                                <Image className="w-full sm:w-1/2" src={assets.hero_img} alt="hero-image"  />
+
                 </div>
          );
 }
