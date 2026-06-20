@@ -44,8 +44,9 @@ const Navbar = () => {
             10
           </p>
         </Link>
-       <MobileMenu />
+     
       </div>
+      <MobileMenu />
     </div>
   )
 }
