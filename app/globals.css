@@ -4,3 +4,9 @@
   opacity: 1;
   pointer-events: auto;
 }
+.text-hovering{
+  transition: all ease 0.4s;
+}
+.text-hovering:hover{
+background-color: white;
+}

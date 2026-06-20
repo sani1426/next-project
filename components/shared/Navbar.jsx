@@ -1,8 +1,8 @@
 import Link from 'next/link'
 import { assets, navItems } from '../../assets/assets'
 import NavLink from '../UI/NavLink'
-import { FiSearch } from "react-icons/fi";
-import { BsPersonCircle } from "react-icons/bs";
+import { FiSearch } from 'react-icons/fi'
+import { BsPersonCircle } from 'react-icons/bs'
 
 const Navbar = () => {
   return (
@@ -15,14 +15,14 @@ const Navbar = () => {
         ))}
       </ul>
       <div className='flex items-center gap-6'>
-     <FiSearch className='text-2xl cursor-pointer' />
+        <FiSearch className='text-2xl cursor-pointer' />
         <div className='gr relative'>
-    <BsPersonCircle className='text-2xl cursor-pointer' />
-          <div className='gr-h opacity-0 pointer-events-none absolute transition-all duration-400 dropdown-menu -left-2 pt-4'>
+          <BsPersonCircle className='text-2xl cursor-pointer' />
+          <div className='gr-h opacity-0 pointer-events-none absolute transition-all duration-400 dropdown-menu left-0 pt-4'>
             <div className='flex flex-col gap-2 w-36 py-3 px-5 bg-slate-100 text-gray-500 rounded-md'>
-              <p className='cursor-pointer hover:text-black'>پروفایل</p>
-              <p className='cursor-pointer hover:text-black'>سفارشات</p>
-              <p className='cursor-pointer hover:text-black'>خروج</p>
+              <p className='cursor-pointer text-hovering'>پروفایل</p>
+              <p className='cursor-pointer text-hovering'>سفارشات</p>
+              <p className='cursor-pointer text-hovering'>خروج</p>
             </div>
           </div>
         </div>
