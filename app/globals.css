@@ -10,3 +10,9 @@
 .text-hovering:hover{
 background-color: #ffffffce;
 }
+.shadow-hover{
+  transition: all ease-in-out 0.3s;
+}
+.shadow-hover:hover{
+box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+}
