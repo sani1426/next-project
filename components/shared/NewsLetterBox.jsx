@@ -10,9 +10,9 @@ const NewsLetterBox = () => {
                         <p className="text-gray-400 mt-3">
                                 از جدیدترین محصولات و تخفیف ها و جوایز شگفت انگیز ما با خبر شوید
                         </p>
-                        <form onSubmit={onSubmitHandler} className="w-full sm:w-1/2 flex items-center gap-3 mx-auto py-6 border px-3" >
-                                <input className="w-full sm:flex-1 outline-none rounded-lg bg-slate-200" type="email" placeholder="ایمیل خود را وارد کنید ..." required />
-                                <button className="bg-black text-white text-xs px-10 py-4 cursor-pointer" type="submit">ثبت نام</button>
+                        <form onSubmit={onSubmitHandler} className="w-full sm:w-1/2 flex items-center gap-3 mx-auto py-4 border px-3" >
+                                <input className="w-full sm:flex-1 outline-none rounded-lg bg-slate-200 py-2 px-1" type="email" placeholder="ایمیل خود را وارد کنید ..." required />
+                                <button className="bg-black text-white text-xs px-10 py-4 cursor-pointer rounded-lg" type="submit">ثبت نام</button>
                         </form>
                 </div>
          );
