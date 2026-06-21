@@ -8,7 +8,7 @@ import { useState } from 'react'
 const ProductItems = ({ id, image, name, price }) => {
   const { currency } = useShopContext()
   const [hover, setHover] = useState(false)
-  const Source = hover ? (image[1] ? image[1] : image[0]) : image[0]
+  const Source = hover ? image[1]  : image[0]
   return (
     <Link
       className='text-gray-700 cursor-pointer shadow shadow-hover rounded-md'
