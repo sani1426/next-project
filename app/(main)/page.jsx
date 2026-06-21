@@ -1,5 +1,6 @@
 
 
+import BestSeller from "../../components/main/BestSeller";
 import Hero from "../../components/main/Hero";
 import LatestCollection from "../../components/main/LatestCollection";
 
@@ -8,6 +9,7 @@ export default function Home() {
 <div>
     <Hero />
     <LatestCollection />
+    <BestSeller />
 </div>
   );
 }
