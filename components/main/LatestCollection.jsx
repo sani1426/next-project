@@ -4,7 +4,6 @@ import Title from "./Title";
 const LatestCollection = () => {
         let latestProduct = []
         latestProduct = products.slice(0,10)
-        console.log(latestProduct);
         return ( 
                 <div className="my-10 px-5  md:px-10">
                         <div className="text-center py-8 text-3xl">
@@ -14,7 +13,7 @@ const LatestCollection = () => {
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 gap-y-6">
                         {
                                 latestProduct.map((p) =>(
-                                        <ProductItems key={p.id} id={p.id} name={p.name} image={p.image} price={p.price} />
+                                        <ProductItems key={p._id} id={p._id} name={p.name} image={p.image} price={p.price} />
                                 ))
                         }
                 </div>
