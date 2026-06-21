@@ -1,9 +1,6 @@
 import Link from 'next/link'
 import { assets, navItems } from '../../assets/assets'
 import NavLink from '../UI/NavLink'
-import { FiSearch } from 'react-icons/fi'
-import { GoPerson } from 'react-icons/go'
-import { BsHandbag } from 'react-icons/bs'
 import MobileMenu from './MobileMenu'
 import Image from 'next/image'
 
@@ -19,10 +16,8 @@ const Navbar = () => {
         ))}
       </ul>
       <div className='flex items-center gap-6'>
-        {/* <FiSearch className='text-2xl cursor-pointer' /> */}
         <Image src={assets.search_icon} alt='search-icon' className='w-5 cursor-pointer' />
         <div className='gr relative'>
-          {/* <GoPerson className='text-2xl cursor-pointer' /> */}
           <Image src={assets.profile_icon} alt='search-icon' className='w-5 cursor-pointer' />
           <div className='gr-h opacity-0 pointer-events-none absolute transition-all duration-400 dropdown-menu left-0 pt-4'>
             <div className='flex flex-col gap-2   bg-slate-100 text-gray-500 rounded-md p-2'>
@@ -42,7 +37,6 @@ const Navbar = () => {
           </div>
         </div>
         <Link href='/cart' className='relative'>
-          {/* <BsHandbag className='text-2xl cursor-pointer' /> */}
           <Image src={assets.cart_icon} alt='search-icon' className='w-5 cursor-pointer' />
           <p className='absolute riht-[-5px] -bottom-1.25 w-4 text-center leading-4 bg-black text-white aspect-square rounded-full text-[8px]'>
             10
