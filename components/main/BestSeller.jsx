@@ -2,7 +2,7 @@
 import { products } from "../../assets/assets";
 import ProductItems from "./ProductItem";
 const BestSeller = () => {
-        const BestSellerProduct = products.find((product) => product.bestseller == true)
+        const BestSellerProduct = products.filter((product) => product.bestseller == true)
         return ( 
                 <div>
                         {
