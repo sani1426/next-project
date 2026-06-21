@@ -20,5 +20,5 @@ box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
   transition: all ease-in-out 0.3s;
 }
 .image-hover:hover{
-transform: scale(110);
+transform: scale(1.1);
 }
