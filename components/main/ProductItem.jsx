@@ -7,7 +7,7 @@ import Image from 'next/image'
 const ProductItems = ({ id , image , name , price }) => {
   const { currency } = useShopContext()
   return (
-  <Link className='text-gray-700 cursor-pointer shadow-hover' href={`/products/${id}`}>
+  <Link className='text-gray-700 cursor-pointer shadow shadow-hover rounded-md' href={`/products/${id}`}>
         <div className='overflow-hidden'>
                 <Image className='hover:scale-110 transition ease-in-out' src={image[0]} alt="image" />
         </div>

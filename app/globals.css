@@ -16,3 +16,9 @@ background-color: #ffffffce;
 .shadow-hover:hover{
 box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
 }
+.image-hover{
+  transition: all ease-in-out 0.3s;
+}
+.image-hover:hover{
+transform: scale(110%);
+}
