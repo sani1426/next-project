@@ -10,6 +10,12 @@
 .text-hovering:hover{
 background-color: #ffffffce;
 }
+.link-hovering{
+  transition: all ease 0.4s;
+}
+.link-hovering:hover{
+background-color: #3f42f5ce;
+}
 .shadow-hover{
   transition: all ease-in-out 0.3s;
 }

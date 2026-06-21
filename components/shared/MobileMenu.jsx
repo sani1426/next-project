@@ -21,7 +21,7 @@ const MobileMenu = () => {
                                 </div>
                                 {
                                         navItems.map((item) => (
-                                                <Link onClick={()=> setVisible(false)} key={item.id} href={item.href} className={`py-2 pr-6 border-b`} >
+                                                <Link onClick={()=> setVisible(false)} key={item.id} href={item.href} className={`py-2 pr-6 border-b link-hovering`} >
                                                         {item.title}
                                                 </Link>
                                         ))
