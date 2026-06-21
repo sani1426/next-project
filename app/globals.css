@@ -1,30 +1,31 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
-.gr:hover .gr-h{
+.gr:hover .gr-h {
   opacity: 1;
   pointer-events: auto;
 }
-.text-hovering{
+.text-hovering {
   transition: all ease 0.4s;
 }
-.text-hovering:hover{
-background-color: #ffffffce;
+.text-hovering:hover {
+  background-color: #ffffffce;
 }
-.link-hovering{
+.link-hovering {
   transition: all ease 0.4s;
 }
-.link-hovering:hover{
-background-color: #3f42f5ce;
+.link-hovering:hover {
+  background-color: #3f42f5ce;
+  color: whitesmoke;
 }
-.shadow-hover{
+.shadow-hover {
   transition: all ease-in-out 0.3s;
 }
-.shadow-hover:hover{
-box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+.shadow-hover:hover {
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
 }
-.image-hover{
+.image-hover {
   transition: all ease-in-out 0.3s;
 }
-.image-hover:hover{
-transform: scale(1.1);
+.image-hover:hover {
+  transform: scale(1.1);
 }
