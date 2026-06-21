@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
       <body className={myFont.className}>
         <ShopContextProvider>
           <Navbar />
-          <main>{children}</main>
+          <main className=''>{children}</main>
           <Footer />
         </ShopContextProvider>
       </body>
