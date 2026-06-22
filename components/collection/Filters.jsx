@@ -26,6 +26,7 @@ const Filters = () => {
         }
         const applyFilter = () =>{
                 let productCopy =  newProducts.slice()
+                console.log(category,subCategory);
                 if(category.length > 0) {
                         productCopy = productCopy.filter(item => category.includes(item.category))
                 }
