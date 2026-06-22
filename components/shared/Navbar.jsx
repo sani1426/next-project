@@ -1,11 +1,14 @@
+"use client"
 import Link from 'next/link'
 import { assets, navItems } from '../../assets/assets'
 import NavLink from '../UI/NavLink'
 import MobileMenu from './MobileMenu'
 import Image from 'next/image'
+import { useShopContext } from '../../context/ShopContext'
 
 
 const Navbar = () => {
+  const {showSearchBar,setShowSearchBar} = useShopContext()
   return (
     <div className='flex items-center justify-between py-5 font-medium px-5 md:px-10'>
       {/* <img src={assets.logo} alt="logo-image" className="w-36" /> */}
@@ -16,7 +19,7 @@ const Navbar = () => {
         ))}
       </ul>
       <div className='flex items-center gap-6'>
-        <Image src={assets.search_icon} alt='search-icon' className='w-5 cursor-pointer' />
+        <Image onClick={()=>setShowSearchBar(!showSearchBar)} src={assets.search_icon} alt='search-icon' className='w-5 cursor-pointer' />
         <div className='gr relative'>
           <Image src={assets.profile_icon} alt='search-icon' className='w-5 cursor-pointer' />
           <div className='gr-h opacity-0 pointer-events-none absolute transition-all duration-400 dropdown-menu left-0 pt-4'>
