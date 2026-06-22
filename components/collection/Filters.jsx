@@ -25,7 +25,7 @@ const Filters = () => {
                 }
         }
         useEffect(()=>{
-                console.log(category);
+
                 applyFilter(category,subCategory)
       
         },[category,subCategory])

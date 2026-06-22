@@ -12,10 +12,9 @@ export const ShopContextProvider = ({ children }) => {
   const applyFilter = (category, subCategory) => {
     if (category.length > 0) {
       setNewProducts(prev => {
-        category.map((c) => {
-          prev.filter((p) => p.category == c)
-        })
-      })
+        prev.filter(item => category.includes(item.category))
+        }
+      )
       }
     }
   
