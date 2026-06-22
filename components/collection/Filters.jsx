@@ -21,7 +21,7 @@ const Filters = () => {
                 if(subCategory.includes(e.target.value)) {
                         setSubCategory(prev => prev.filter(item => item !== e.target.value))
                 }else{
-                        setSubCategory(prev => [...prev , r.target.value])
+                        setSubCategory(prev => [...prev , e.target.value])
                 }
         }
         useEffect(()=>{
