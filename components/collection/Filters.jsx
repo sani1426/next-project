@@ -14,7 +14,7 @@ const Filters = () => {
                 if(category.includes(e.target.value)) {
                         setCategory(prev => prev.filter(item => item !== e.target.value))
                 }else{
-                        setCategory(prev => [...prev , r.target.value])
+                        setCategory(prev => [...prev , e.target.value])
                 }
         }
         const toggleSubCategory = (e) => {
