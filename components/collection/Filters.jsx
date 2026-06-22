@@ -24,8 +24,9 @@ const Filters = () => {
                         setSubCategory(prev => [...prev , e.target.value])
                 }
         }
+        let productCopy ;
+        useEffect(()=>{   productCopy =  newProducts.slice()},[])
         const applyFilter = () =>{
-                let productCopy =  newProducts.slice()
                    console.log(productCopy);
                 if(category.length > 0) {
                         productCopy = productCopy.filter(item => category.includes(item.category))
