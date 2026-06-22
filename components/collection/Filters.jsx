@@ -38,13 +38,13 @@ const Filters = () => {
                         <p className="mb-3 text-sm font-medium">دسته بندی ها</p>
                         <div className="flex flex-col gap-2 text-sm font-light text-gray-700">
                                 <p className="flex gap-2">
-                                        <input className="w-3" type="checkbox" value={"مردانه"} onChange={toggleCategory} /> مردانه
+                                        <input className="w-3" type="checkbox" value={"men"} onChange={toggleCategory} /> مردانه
                                 </p>
                                 <p className="flex gap-2">
-                                        <input className="w-3" type="checkbox" value={"زنانه"} onChange={toggleCategory} /> زنانه
+                                        <input className="w-3" type="checkbox" value={"women"} onChange={toggleCategory} /> زنانه
                                 </p>
                                 <p className="flex gap-2">
-                                        <input className="w-3" type="checkbox" value={"بچگانه"} onChange={toggleCategory} /> بچگانه
+                                        <input className="w-3" type="checkbox" value={"kids"} onChange={toggleCategory} /> بچگانه
                                 </p>
                         </div>
                 </div>
