@@ -10,13 +10,19 @@ const SearchBar = () => {
         const [search , setSearch] = useState('')
         // if(showSearchBar) {
                 return( 
-                        <div className="border-t border-b bg-gray-50 text-center">
-                                <div className="inline-flex items-center border border-gray-400 px-5 py-2 my-5">
-                                        <input value={search} onChange={(e)=>setSearch(e.target.value)} type="text" placeholder="سرچ کنید ..." className="flex-1 outline-none bg-inherit text-sm" />
-                                        <Image src={assets.search_icon} alt="search-icon" className="w-4" />
+                        <>
+                        {
+                                showSearchBar ? (
+                                        <div className="border-t border-b bg-gray-50 text-center">
+                                        <div className="inline-flex items-center border border-gray-400 px-5 py-2 my-5">
+                                                <input value={search} onChange={(e)=>setSearch(e.target.value)} type="text" placeholder="سرچ کنید ..." className="flex-1 outline-none bg-inherit text-sm" />
+                                                <Image src={assets.search_icon} alt="search-icon" className="w-4" />
+                                        </div>
+                                        <Image onClick={()=>setShowSearchBar(false)} src={assets.cross_icon} alt="cross" className="inline w-3 cursor-pointer" />
                                 </div>
-                                <Image onClick={()=>setShowSearchBar(false)} src={assets.cross_icon} alt="cross" className="inline w-3 cursor-pointer" />
-                        </div>
+                                ): null
+                        }
+                    </>
                  )
         // }
 
