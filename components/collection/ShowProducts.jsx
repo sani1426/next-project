@@ -9,9 +9,9 @@ import Title from "../main/Title";
 const ShowProducts = () => {
  
         const {newProducts, setNewProducts} = useShopContext()
-        useEffect(()=>{
-                console.log(newProducts);
-        },[newProducts])
+        // useEffect(()=>{
+        //         console.log(newProducts);
+        // },[newProducts])
 
         return ( 
                 <div className="flex-1">
