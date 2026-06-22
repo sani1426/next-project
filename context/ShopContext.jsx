@@ -11,11 +11,14 @@ export const ShopContextProvider = ({ children }) => {
   const [newProducts, setNewProducts] = useState(products)
   const applyFilter = (category, subCategory) => {
     if (category.length > 0) {
-      setNewProducts((prev) => {
-        prev.filter((item) => category.includes(item.category))
+      setNewProducts(prev => {
+        category.map((c) => {
+          prev.filter((p) => p.category !== c)
+        })
       })
+      }
     }
-  }
+  
 
   //        let  newProduct =   products.filter(item => item.category !== category)
 
