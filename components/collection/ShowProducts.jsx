@@ -11,9 +11,9 @@ const ShowProducts = () => {
 
    
 
-        useEffect(()=>{
-                setFilteredProducts(products)
-        },[])
+        // useEffect(()=>{
+        //         setFilteredProducts(products)
+        // },[])
         return ( 
                 <div className="flex-1">
                 <div className="flex justify-between text-base sm:text-2xl mb-4">
