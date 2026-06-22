@@ -1,18 +1,11 @@
-"use client"
 
-
-import { useEffect } from "react";
-import { useShopContext } from "../../context/ShopContext";
+import { products } from "../../assets/assets";
 import ProductItems from "../main/ProductItem";
 import Title from "../main/Title";
 
 const ShowProducts = () => {
  
-        const {newProducts, setNewProducts} = useShopContext()
-        // useEffect(()=>{
-        //         console.log(newProducts);
-        // },[newProducts])
-
+  
         return ( 
                 <div className="flex-1">
                 <div className="flex justify-between text-base sm:text-2xl mb-4">
@@ -26,7 +19,7 @@ const ShowProducts = () => {
 
                 <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 gap-y-6">
                         {
-                                newProducts?.map((product) => (
+                                products?.map((product) => (
                                         <ProductItems key={product._id} name={product.name} image={product.image} price={product.price} />
                                 ))
                         }

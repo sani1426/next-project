@@ -1,12 +1,11 @@
 "use client"
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { assets } from "../../assets/assets";
 import { useShopContext } from "../../context/ShopContext";
 
 const Filters = () => {
- const {newProducts, setNewProducts} = useShopContext()
         const [show , setShow] = useState(false)
         const [category , setCategory] = useState([])
         const [subCategory , setSubCategory] = useState([])
@@ -24,23 +23,7 @@ const Filters = () => {
                         setSubCategory(prev => [...prev , e.target.value])
                 }
         }
-        let productCopy ;
-        useEffect(()=>{   productCopy =  newProducts.slice()},[])
-        const applyFilter = () =>{
-                   console.log(productCopy);
-                if(category.length > 0) {
-                        productCopy = productCopy.filter(item => category.includes(item.category))
-                        console.log(productCopy);
-                }
-                if(subCategory.length > 0) {
-                        productCopy = productCopy.filter(item => subCategory.includes(item.subCategory))
-                }
-                setNewProducts(productCopy)
 
-        }
-        useEffect(()=>{
-                applyFilter()
-        },[category , subCategory])
     
         return ( 
                 <div className="min-w-60">
