@@ -1,19 +1,13 @@
 "use client"
-import { useEffect, useState } from "react";
-import { useShopContext } from "../../context/ShopContext";
+
+
 import ProductItems from "../main/ProductItem";
 import Title from "../main/Title";
 
 const ShowProducts = () => {
-        const {newProducts} = useShopContext()
-        const [filteredProducts,setFilteredProducts] = useState([])
+ 
+        const {newProducts, setNewProducts} = useShopContext()
 
-
-   
-
-        // useEffect(()=>{
-        //         setFilteredProducts(products)
-        // },[])
         return ( 
                 <div className="flex-1">
                 <div className="flex justify-between text-base sm:text-2xl mb-4">
