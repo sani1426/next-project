@@ -1,8 +1,8 @@
 
-const ProductDetails = () => {
+const ProductDetails = ({params}) => {
         return ( 
                 <div>
-                        Productdetails
+                        <h1>{params.id}</h1>
                 </div>
          );
 }
