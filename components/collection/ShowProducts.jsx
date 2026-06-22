@@ -27,7 +27,7 @@ const ShowProducts = () => {
 
                 <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 gap-y-6">
                         {
-                                newProducts.map((product) => (
+                                newProducts?.map((product) => (
                                         <ProductItems key={product._id} name={product.name} image={product.image} price={product.price} />
                                 ))
                         }
