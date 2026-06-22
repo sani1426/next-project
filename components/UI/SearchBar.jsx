@@ -8,7 +8,7 @@ import { assets } from "../../assets/assets";
 const SearchBar = () => {
         const {showSearchBar , setShowSearchBar} =useShopContext()
         const [search , setSearch] = useState('')
-        if(showSearchBar) {
+        // if(showSearchBar) {
                 return( 
                         <div className="border-t border-b bg-gray-50 text-center">
                                 <div className="inline-flex items-center border border-gray-400 px-5 py-2 my-5">
@@ -18,7 +18,7 @@ const SearchBar = () => {
                                 <Image onClick={()=>setShowSearchBar(false)} src={assets.cross_icon} alt="cross" className="inline w-3 cursor-pointer" />
                         </div>
                  )
-        }
+        // }
 
 }
  
