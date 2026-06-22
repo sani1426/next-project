@@ -5,11 +5,13 @@ import NavLink from '../UI/NavLink'
 import MobileMenu from './MobileMenu'
 import Image from 'next/image'
 import { useShopContext } from '../../context/ShopContext'
+import SearchBar from '../UI/SearchBar'
 
 
 const Navbar = () => {
   const {showSearchBar,setShowSearchBar} = useShopContext()
   return (
+    <>
     <div className='flex items-center justify-between py-5 font-medium px-5 md:px-10'>
       {/* <img src={assets.logo} alt="logo-image" className="w-36" /> */}
       <h1 className='text-4xl  sm:text-3xl md:text-4xl font-bold'>سامان شاپ</h1>
@@ -49,6 +51,11 @@ const Navbar = () => {
       </div>
    
     </div>
+
+{
+showSearchBar ? <SearchBar/> : null
+}
+    </>
   )
 }
 
