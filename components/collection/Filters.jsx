@@ -1,11 +1,32 @@
 "use client"
 
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { assets } from "../../assets/assets";
+import { useShopContext } from "../../context/ShopContext";
 
 const Filters = () => {
+        const {applyFilter} = useShopContext()
         const [show , setShow] = useState(false)
+        const [category , setCategory] = useState([])
+        const [subCategory , setSubCategory] = useState([])
+        const toggleCategory = (e) => {
+                if(category.includes(e.target.value)) {
+                        setCategory(prev => prev.filter(item => item !== e.target.value))
+                }else{
+                        setCategory(prev => [...prev , r.target.value])
+                }
+        }
+        const toggleSubCategory = (e) => {
+                if(subCategory.includes(e.target.value)) {
+                        setSubCategory(prev => prev.filter(item => item !== e.target.value))
+                }else{
+                        setSubCategory(prev => [...prev , r.target.value])
+                }
+        }
+        useEffect(()=>{
+                applyFilter(category,subCategory)
+        },[category,subCategory])
         return ( 
                 <div className="min-w-60">
                         <div className="flex items-center flex-row gap-2">
@@ -17,13 +38,13 @@ const Filters = () => {
                         <p className="mb-3 text-sm font-medium">دسته بندی ها</p>
                         <div className="flex flex-col gap-2 text-sm font-light text-gray-700">
                                 <p className="flex gap-2">
-                                        <input className="w-3" type="checkbox" value={"مردانه"} /> مردانه
+                                        <input className="w-3" type="checkbox" value={"مردانه"} onChange={toggleCategory} /> مردانه
                                 </p>
                                 <p className="flex gap-2">
-                                        <input className="w-3" type="checkbox" value={"زنانه"} /> زنانه
+                                        <input className="w-3" type="checkbox" value={"زنانه"} onChange={toggleCategory} /> زنانه
                                 </p>
                                 <p className="flex gap-2">
-                                        <input className="w-3" type="checkbox" value={"بچگانه"} /> بچگانه
+                                        <input className="w-3" type="checkbox" value={"بچگانه"} onChange={toggleCategory} /> بچگانه
                                 </p>
                         </div>
                 </div>
@@ -32,13 +53,13 @@ const Filters = () => {
                         <p className="mb-3 text-sm font-medium">مدل ها</p>
                         <div className="flex flex-col gap-2 text-sm font-light text-gray-700">
                                 <p className="flex gap-2">
-                                        <input className="w-3" type="checkbox" value={"پیراهن"} />پیراهن
+                                        <input className="w-3" type="checkbox" value={"پیراهن"} onChange={toggleSubCategory} />پیراهن
                                 </p>
                                 <p className="flex gap-2">
-                                        <input className="w-3" type="checkbox" value={"شلوار"} />شلوار
+                                        <input className="w-3" type="checkbox" value={"شلوار"} onChange={toggleSubCategory} />شلوار
                                 </p>
                                 <p className="flex gap-2">
-                                        <input className="w-3" type="checkbox" value={"هودی"} />هودی
+                                        <input className="w-3" type="checkbox" value={"هودی"} onChange={toggleSubCategory} />هودی
                                 </p>
                         </div>
                 </div>
