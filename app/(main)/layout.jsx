@@ -4,7 +4,7 @@ import '../globals.css'
 import Navbar from '../../components/shared/Navbar'
 import Footer from '../../components/shared/Footer'
 import { ShopContextProvider } from '../../context/ShopContext'
-
+import SearchBar from '../../components/UI/SearchBar'
 
 const myFont = localFont({
   src: '../../public/font/Tanha.ttf',
@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
       <body className={myFont.className}>
         <ShopContextProvider>
           <Navbar />
-
+          <SearchBar />
           <main className=''>{children}</main>
           <Footer />
         </ShopContextProvider>
