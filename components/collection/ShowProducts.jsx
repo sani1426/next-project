@@ -1,6 +1,7 @@
 "use client"
 
 
+import { useEffect } from "react";
 import { useShopContext } from "../../context/ShopContext";
 import ProductItems from "../main/ProductItem";
 import Title from "../main/Title";
@@ -8,6 +9,9 @@ import Title from "../main/Title";
 const ShowProducts = () => {
  
         const {newProducts, setNewProducts} = useShopContext()
+        useEffect(()=>{
+                console.log(newProducts);
+        },[newProducts])
 
         return ( 
                 <div className="flex-1">
