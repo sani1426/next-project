@@ -9,7 +9,7 @@ import SearchBar from '../UI/SearchBar'
 
 
 const Navbar = () => {
-  const {showSearchBar,setShowSearchBar} = useShopContext()
+  const {showSerachBar,setShowSearchBar} = useShopContext()
   return (
     <>
     <div className='flex items-center justify-between py-5 font-medium px-5 md:px-10'>
