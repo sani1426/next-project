@@ -25,8 +25,9 @@ const Filters = () => {
                 }
         }
         useEffect(()=>{
-                applyFilter(category,subCategory)
                 console.log(category);
+                applyFilter(category,subCategory)
+      
         },[category,subCategory])
         return ( 
                 <div className="min-w-60">
