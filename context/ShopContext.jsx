@@ -13,7 +13,7 @@ export const ShopContextProvider = ({ children }) => {
     if (category.length > 0) {
       setNewProducts(prev => {
         category.map((c) => {
-          prev.filter((p) => p.category !== c)
+          prev.filter((p) => p.category == c)
         })
       })
       }
