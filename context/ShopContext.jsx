@@ -11,13 +11,12 @@ export const ShopContextProvider = ({children}) => {
         const [newProducts , setNewProducts] = useState(products)
         const applyFilter = (category , subCategory) => {
                 setNewProducts(prev => {
-                        category.forEach((item) => {
-                        return prev.filter(p => p.category !== item.category)
-                        })
+                        prev.filter(item => category.includes(item.category))
                 })
+                }
               
 //        let  newProduct =   products.filter(item => item.category !== category)
-        }
+     
         return(
                 <ShopContext.Provider value={{products, currency , delivery_fee,applyFilter,newProducts}}>
                         {children}
