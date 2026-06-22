@@ -1,6 +1,7 @@
 "use client"
 
 
+import { useShopContext } from "../../context/ShopContext";
 import ProductItems from "../main/ProductItem";
 import Title from "../main/Title";
 
