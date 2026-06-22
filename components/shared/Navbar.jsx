@@ -52,9 +52,9 @@ const Navbar = () => {
    
     </div>
 
-{
-showSearchBar ? <SearchBar/> : null
-}
+
+<SearchBar/> 
+
     </>
   )
 }
