@@ -1,9 +1,15 @@
+
 import { products } from "../../../../assets/assets";
 
 
 const productPage = async ({params}) => {
         const {id} = await params
-    let productData =  products.find(item => item._id === Number(id))
+        let productData
+        const getdetails = () => {
+                productData =  products.find(item => item._id === Number(id))
+        }
+        getdetails()
+   
 
   return (
     <div>
