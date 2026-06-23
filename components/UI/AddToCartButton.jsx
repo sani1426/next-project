@@ -1,5 +1,6 @@
 "use client"
 import React from 'react'
+import { useShopContext } from '../../context/ShopContext'
 
 const AddToCartButton = ({productData,size}) => {
         const { AddToCart,cart} = useShopContext()
