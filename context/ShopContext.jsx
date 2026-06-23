@@ -10,7 +10,7 @@ export const ShopContextProvider = ({ children }) => {
   const delivery_fee = 10
   const [showSerachBar, setShowSearchBar] = useState(false)
   const [cart, setCart] = useState([])
-  const AddToCart = ({ product, size }) => {
+  const AddToCart = (product, size ) => {
     console.log(product , size);
     setCart((prev) => {
       let selectedProduct = prev.find((p) => p._id == product._id)
