@@ -10,7 +10,7 @@ const productPage = async ({ params }) => {
   getdetails()
 
   return (
-    <div className='border-t-2 pt-10 transition-opacity ease-in duration-500 opacity-100'>
+    <div className='border-t-2 pt-10 transition-opacity ease-in duration-500 opacity-100 px-5 sm:px-10'>
       <div className='flex gap-12 sm:gap-12 flex-col sm:flex-row'>
         <div className='flex-1 flex flex-col-reverse gap-3 sm:flex-row '>
           <ShowImage image={productData.image} />
