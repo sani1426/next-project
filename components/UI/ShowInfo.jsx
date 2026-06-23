@@ -3,8 +3,10 @@
 import { useState } from "react"
 import AddToCartButton from "./AddToCartButton"
 
+
 const ShowInfo = ({product}) => {
         const [selectedSize , setSelectedSize] =useState('')
+        
   return (
         <>
         <div className='flex flex-col gap-4 my-8'>

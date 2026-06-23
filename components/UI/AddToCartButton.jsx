@@ -2,8 +2,16 @@
 import React from 'react'
 
 const AddToCartButton = ({productData,size}) => {
+        const { AddToCart,cart} = useShopContext()
   return (
-        <button className='bg-black text-white px-8 py-3 text-sm active:bg-gray-700'>
+        <button onClick={()=> {
+                if(size){
+                        AddToCart(productData , size)
+                        console.log(cart);
+                }else{
+                        console.log("size is empty");
+                }
+        }} className='bg-black text-white px-8 py-3 text-sm active:bg-gray-700'>
         اضافه به سبد خرید
       </button>
   )
