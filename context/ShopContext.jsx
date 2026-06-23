@@ -10,8 +10,9 @@ export const ShopContextProvider = ({ children }) => {
   const delivery_fee = 10
 const [showSerachBar , setShowSearchBar] = useState(false)
   const [cartItems , setCartItems] = useState({})
-  const addToCartHandller = (product) => {
-    
+  const addToCartHandller = (product , size) => {
+    let cartData = structuredClone(cartItems)
+  
   }
 
   return (
