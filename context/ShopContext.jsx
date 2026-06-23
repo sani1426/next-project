@@ -12,7 +12,7 @@ export const ShopContextProvider = ({ children }) => {
   const [cart, setCart] = useState([])
   const AddToCart = ({ product, size }) => {
     setCart((prev) => {
-      let selectedProduct = prev.find((p) => p.id == product.id)
+      let selectedProduct = prev.find((p) => p._id == product._id)
       if (!selectedProduct) {
         return [...prev, { ...product, quantity: 1, size: size }]
       } else {
@@ -25,13 +25,13 @@ export const ShopContextProvider = ({ children }) => {
     })
   }
   const RemoveFromCart = ({ productId }) => {
-    setCart((prev) => prev.filter((product) => product.id != productId))
+    setCart((prev) => prev.filter((product) => product._id != productId))
   }
 
   const ChangeQuantity = ({ id, q }) => {
     setCart((prev) => {
       prev.map((item) => {
-        item.id == id ? { ...item, quantity: q } : item
+        item._id == id ? { ...item, quantity: q } : item
       })
     })
   }
