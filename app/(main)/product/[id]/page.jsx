@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { assets, products } from '../../../../assets/assets'
 import ShowImage from '../../../../components/UI/ShowImage'
-import ShowSize from '../../../../components/UI/ShowSize'
+import ShowInfo from '../../../../components/UI/ShowInfo'
 import RelatedProduct from '../../../../components/shared/RelatedProduct'
 
 const productPage = async ({ params }) => {
@@ -37,10 +37,8 @@ const productPage = async ({ params }) => {
           <p className='mt-5 text-gray-500 md:w-4/5'>
             {productData.description}
           </p>
-          <ShowSize sizes={productData.sizes} />
-          <button className='bg-black text-white px-8 py-3 text-sm active:bg-gray-700'>
-            اضافه به سبد خرید
-          </button>
+          <ShowInfo sizes={productData} />
+
           <hr className='mt-8 sm:w-4/5' />
           <div className='text-sm text-gray-500 mt-5 flex flex-col gap-1'>
             <p>محصول 100% اورجینال</p>
@@ -72,7 +70,10 @@ const productPage = async ({ params }) => {
         </div>
       </div>
       {/* -------------- related Product Display ------------------*/}
-      <RelatedProduct category={productData.category} subCategory={productData.subCategory} />
+      <RelatedProduct
+        category={productData.category}
+        subCategory={productData.subCategory}
+      />
     </div>
   )
 }
