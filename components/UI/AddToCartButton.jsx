@@ -8,6 +8,7 @@ const AddToCartButton = ({productData,size}) => {
         <button onClick={()=> {
                 if(size){
                         AddToCart(productData , size)
+                        console.log(productData,size);
                         console.log(cart);
                 }else{
                         console.log("size is empty");
