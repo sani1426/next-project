@@ -17,6 +17,7 @@ const productPage = async ({ params }) => {
         <div className='flex-1 flex flex-col-reverse gap-3 sm:flex-row '>
           <ShowImage image={productData.image} />
         </div>
+         {/* --------------- product info ----------- */}
         <div className='flex-1'>
           <h1 className='font-medium text-2xl mt-2'>{productData.name}</h1>
           <div className='flex items-center gap-1 mt-2'>
@@ -46,6 +47,17 @@ const productPage = async ({ params }) => {
                 <p>مرجوعی آسان با ضمانت هفت روز</p>
           </div>
         </div>
+      </div>
+      {/* --------------- description & review section ----------- */}
+      <div className='mt-20'>
+                <div className='flex'>
+                        <p className='border text-sm px-5 py-3'>توضیحات</p>
+                        <p className='border text-sm px-5 py-3'>نظرات (122)</p>
+                </div>
+                <div className="flex flex-col gap-4 border px-6 py-6 text-sm text-gray-500">
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیازفعلی تکنولوژی مورد نیاز</p>
+                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز</p>
+                </div>
       </div>
     </div>
   )
