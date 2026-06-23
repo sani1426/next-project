@@ -1,8 +1,9 @@
 "use cache"
-const ProductDetails = ({params}) => {
+const ProductDetails = async ({params}) => {
+        const {id} = await params
         return ( 
                 <div>
-                        <h1>{params.id}</h1>
+                        <h1>{id}</h1>
                 </div>
          );
 }
