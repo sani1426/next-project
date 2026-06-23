@@ -1,5 +1,7 @@
-import { products } from '../../../../assets/assets'
+import Image from 'next/image'
+import { assets, products } from '../../../../assets/assets'
 import ShowImage from '../../../../components/UI/ShowImage'
+import ShowSize from '../../../../components/UI/ShowSize'
 
 const productPage = async ({ params }) => {
   const { id } = await params
@@ -14,6 +16,20 @@ const productPage = async ({ params }) => {
       <div className='flex gap-12 sm:gap-12 flex-col sm:flex-row'>
         <div className='flex-1 flex flex-col-reverse gap-3 sm:flex-row '>
           <ShowImage image={productData.image} />
+        </div>
+        <div className='flex-1'>
+                <h1 className='font-medium text-2xl mt-2'>{productData.name}</h1>
+                <div className='flex items-centergap-1 mt-2'>
+                        <Image src={assets.star_icon} alt='' className='w-3.5' />
+                        <Image  src={assets.star_icon} alt='' className='w-3.5' />
+                        <Image  src={assets.star_icon} alt='' className='w-3.5' />
+                        <Image  src={assets.star_icon} alt='' className='w-3.5' />
+                        <Image  src={assets.star_dull_icon} alt='' className='w-3.5' />
+                        <p className='pl-2'>(122)</p>
+                </div>
+                        <p className='mt-5 text-3xl font-medium'>${productData.price}</p>
+                        <p className='mt-5 text-gray-500 md:w-4/5'>{productData.description}</p>
+                    <ShowSize sizes={productData.sizes} />
         </div>
       </div>
     </div>

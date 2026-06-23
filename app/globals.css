@@ -1,5 +1,11 @@
 @import 'tailwindcss';
 
+
+
+::-webkit-scrollbar{
+  display: none;
+}
+
 .gr:hover .gr-h {
   opacity: 1;
   pointer-events: auto;
