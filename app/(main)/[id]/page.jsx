@@ -2,12 +2,12 @@
 
 
 
-const ProductDetails =  ({params}) => {
+const ProductDetails =  () => {
       
         return ( 
            
                 <div>
-                        <h1>{params.id}</h1>
+                        <h1>hello</h1>
                 </div>
      
          );
