@@ -11,6 +11,7 @@ export const ShopContextProvider = ({ children }) => {
   const [showSerachBar, setShowSearchBar] = useState(false)
   const [cart, setCart] = useState([])
   const AddToCart = ({ product, size }) => {
+    console.log(product , size);
     setCart((prev) => {
       let selectedProduct = prev.find((p) => p._id == product._id)
       if (!selectedProduct) {
