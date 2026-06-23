@@ -6,7 +6,7 @@ const productPage = async ({params}) => {
         const {id} = await params
         let productData
         const getdetails = () => {
-                productData =  products.find(item => item._id === Number(id))
+                productData =  products.find(item => item._id == id)
         }
         getdetails()
    
