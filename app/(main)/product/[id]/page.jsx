@@ -39,6 +39,12 @@ const productPage = async ({ params }) => {
           <button className='bg-black text-white px-8 py-3 text-sm active:bg-gray-700'>
             اضافه به سبد خرید
           </button>
+          <hr className='mt-8 sm:w-4/5' />
+          <div className='text-sm text-gray-500 mt-5 flex flex-col gap-1'>
+                <p>محصول 100% اورجینال</p>
+                <p>امکان پرداخت در محل</p>
+                <p>مرجوعی آسان با ضمانت هفت روز</p>
+          </div>
         </div>
       </div>
     </div>

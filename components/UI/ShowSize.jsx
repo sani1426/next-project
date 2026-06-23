@@ -10,7 +10,7 @@ const ShowSize = ({sizes}) => {
         <div className='flex gap-2'>
                 {
                         sizes.map((size,index) => (
-                                <button onClick={()=> setSelectedSize(size)} className={`border border-gray-400 py-2 px-4 bg-gray-100 ${selectedSize == size && "border-blue-600"}`} key={index} >{size}</button>
+                                <button onClick={()=> setSelectedSize(size)} className={`border  py-2 px-4 bg-gray-100 ${selectedSize == size && "border-blue-600"}`} key={index} >{size}</button>
                         ))
                 }
         </div>
