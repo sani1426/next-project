@@ -1,4 +1,4 @@
-
+"use cache"
 const ProductDetails = ({params}) => {
         return ( 
                 <div>
