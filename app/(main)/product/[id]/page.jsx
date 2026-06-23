@@ -30,6 +30,7 @@ const productPage = async ({ params }) => {
                         <p className='mt-5 text-3xl font-medium'>${productData.price}</p>
                         <p className='mt-5 text-gray-500 md:w-4/5'>{productData.description}</p>
                     <ShowSize sizes={productData.sizes} />
+                    <button className='bg-black text-white px-8 py-3 text-sm active:bg-gray-700'>اضافه به سبد خرید</button>
         </div>
       </div>
     </div>
