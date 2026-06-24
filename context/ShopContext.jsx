@@ -17,11 +17,7 @@ export const ShopContextProvider = ({ children }) => {
       if (!selectedProduct) {
         return [...prev, { ...product, quantity: 1, size: size }]
       } else {
-        if (selectedProduct.size === size) {
-          return [...prev, { ...product, quantity: product.quantity + 1 }]
-        } else {
-          return [...prev, { ...product, quantity: 1, size: size }]
-        }
+        selectedProduct.size == size ? [...prev , {...product , quantity : product.quantity + 1 , size : size}] :  [...prev, { ...product, quantity: 1, size: size }]
       }
     })
   }
